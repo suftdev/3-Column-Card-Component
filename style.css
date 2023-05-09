@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding: 50px 0;
+}
+.container {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card {
+  width: 280px;
+  padding: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card:first-child {
+  background-color: hsl(31, 77%, 52%);
+}
+.card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.card:last-child {
+  background-color: hsl(179, 100%, 13%);
+}
+.card h1 {
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+}
+.card p {
+  margin-bottom: 90px;
+  line-height: 25px;
+}
+.card a {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 12px 30px;
+  border-radius: 50px;
+}
+.card:first-child a {
+  color: hsl(31, 77%, 52%);
+}
+.card:nth-child(2) a {
+  color: hsl(184, 100%, 22%);
+}
+.card:last-child a {
+  color: hsl(179, 100%, 13%);
+}
+.card a:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background: transparent;
+}
+.attribution {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  #container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
